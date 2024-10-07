@@ -9,7 +9,7 @@ build-parameters:
   before-all:
     - builder: custom
       commands:
-        - npm ci
+        - npm i
         - npx cds build --production
 modules:
   - name: bookshop-srv
@@ -85,7 +85,7 @@ modules:
       build-result: dist
       builder: custom
       commands:
-        - npm ci
+        - npm i
         - npm run build
       supported-platforms:
         []
@@ -96,7 +96,7 @@ modules:
       build-result: dist
       builder: custom
       commands:
-        - npm ci
+        - npm i
         - npm run build
       supported-platforms:
         []
